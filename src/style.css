@@ -1,0 +1,108 @@
+@import 'tailwindcss';
+@plugin 'tailwindcss-primeui';
+@import 'primeicons/primeicons.css';
+
+html {
+  color-scheme: light;
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--p-surface-50);
+  color: var(--p-surface-900);
+}
+
+.p-datatable {
+  background: var(--p-surface-0);
+  color: var(--p-surface-900);
+}
+
+.p-datatable .p-datatable-header {
+  background: var(--p-surface-0);
+  border-color: var(--p-surface-200);
+  color: var(--p-surface-900);
+}
+
+.p-datatable .p-datatable-thead > tr > th {
+  background: var(--p-surface-50);
+  border-color: var(--p-surface-200);
+  color: var(--p-surface-700);
+}
+
+.p-datatable .p-datatable-tbody > tr {
+  background: var(--p-surface-0);
+  color: var(--p-surface-900);
+}
+
+.p-datatable .p-datatable-tbody > tr > td {
+  border-color: var(--p-surface-200);
+}
+
+.p-datatable.p-datatable-striped .p-datatable-tbody > tr:nth-child(even) {
+  background: var(--p-surface-50);
+}
+
+.p-datatable .p-datatable-tbody > tr:hover {
+  background: var(--p-surface-100);
+}
+
+.p-datatable .p-datatable-emptymessage > td {
+  background: var(--p-surface-0);
+  color: var(--p-surface-500);
+}
+
+.p-datatable .p-paginator {
+  background: var(--p-surface-0);
+  border-color: var(--p-surface-200);
+  color: var(--p-surface-700);
+}
+
+.p-dialog {
+  background: var(--p-surface-0);
+  color: var(--p-surface-900);
+}
+
+.p-dialog .p-dialog-header {
+  background: var(--p-surface-0);
+  border-color: var(--p-surface-200);
+  color: var(--p-surface-900);
+}
+
+.p-dialog .p-dialog-content {
+  background: var(--p-surface-0);
+  color: var(--p-surface-900);
+}
+
+.p-dialog .p-dialog-footer {
+  background: var(--p-surface-0);
+  border-color: var(--p-surface-200);
+}
+
+.p-select-overlay,
+.p-select-list,
+.p-select-option {
+  background: var(--p-surface-0);
+  color: var(--p-surface-900);
+}
+
+.p-select-option.p-focus {
+  background: var(--p-surface-100);
+}
+
+.p-card {
+  background: var(--p-surface-0);
+  color: var(--p-surface-900);
+}
+
+.p-card .p-card-body,
+.p-card .p-card-content,
+.p-card .p-card-title {
+  background: transparent;
+  color: inherit;
+}

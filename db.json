@@ -1,0 +1,176 @@
+{
+  "customers": [
+    {
+      "first_name": "Cliente",
+      "last_name": "1",
+      "cpf": "41913323684",
+      "phone": "(31) 31313-1313",
+      "email": "email@teste.com",
+      "id": "Kpl_uUasaUg"
+    }
+  ],
+  "vehicles": [
+    {
+      "customer_id": "Kpl_uUasaUg",
+      "license_plate": "ABC-1238",
+      "model": "Sandero",
+      "color": "Branco",
+      "id": "LwmkcbRA6BY"
+    }
+  ],
+  "parkingSpots": [
+    {
+      "id": "1",
+      "code": "V01",
+      "status": "Reservada"
+    },
+    {
+      "id": "2",
+      "code": "V02",
+      "status": "Livre"
+    },
+    {
+      "id": "3",
+      "code": "V03",
+      "status": "Livre"
+    },
+    {
+      "id": "4",
+      "code": "V04",
+      "status": "Livre"
+    },
+    {
+      "id": "5",
+      "code": "V05",
+      "status": "Livre"
+    },
+    {
+      "id": "6",
+      "code": "V06",
+      "status": "Livre"
+    },
+    {
+      "id": "7",
+      "code": "V07",
+      "status": "Livre"
+    },
+    {
+      "id": "8",
+      "code": "V08",
+      "status": "Livre"
+    },
+    {
+      "id": "9",
+      "code": "V09",
+      "status": "Livre"
+    },
+    {
+      "id": "10",
+      "code": "V10",
+      "status": "Livre"
+    },
+    {
+      "id": "11",
+      "code": "V11",
+      "status": "Livre"
+    },
+    {
+      "id": "12",
+      "code": "V12",
+      "status": "Livre"
+    }
+  ],
+  "subscriptions": [
+    {
+      "customer_id": "Kpl_uUasaUg",
+      "spot_id": "4",
+      "vehicle_id": "LwmkcbRA6BY",
+      "monthly_fee": 350,
+      "start_date": "2026-06-01",
+      "status": "active",
+      "id": "IuEJsAoA84k"
+    }
+  ],
+  "serviceCategories": [
+    {
+      "id": "1",
+      "type": "parking",
+      "name": "Taxa de estacionamento",
+      "base_price": 15,
+      "unit_label": "hora"
+    },
+    {
+      "id": "2",
+      "type": "washing",
+      "name": "Lavagem simples",
+      "base_price": 50,
+      "unit_label": "servico"
+    },
+    {
+      "id": "3",
+      "type": "detailing",
+      "name": "Detalhamento",
+      "base_price": 150,
+      "unit_label": "servico"
+    }
+  ],
+  "serviceOrders": [
+    {
+      "ticket_number": "OS-0001",
+      "customer_id": null,
+      "customer_name": "Cliente rotativo",
+      "vehicle_plate": "RVO-7313",
+      "spot_id": "3",
+      "spot_code": "V03",
+      "entry_at": "2026-06-08T01:00:48.622Z",
+      "exit_at": "2026-06-08T01:00:56.862Z",
+      "status": "paid",
+      "items": [
+        {
+          "id": "02d1b5e7-0deb-4b06-954a-da9efe414e53",
+          "service_order_id": "Y7lHii7QWeU",
+          "type": "parking",
+          "description": "Taxa de estacionamento",
+          "quantity": 0,
+          "unit_price": 15,
+          "total": 0
+        }
+      ],
+      "id": "Y7lHii7QWeU"
+    },
+    {
+      "id": "Fr1wuL9M7uw",
+      "ticket_number": "OS-TEST",
+      "customer_id": null,
+      "customer_name": "Cliente rotativo",
+      "vehicle_plate": "ABC-1234",
+      "spot_id": "2",
+      "spot_code": "V02",
+      "entry_at": "2026-06-08T01:03:47.065Z",
+      "exit_at": "2026-06-08T01:09:44.720Z",
+      "status": "paid",
+      "items": [
+        {
+          "id": "x",
+          "service_order_id": "Fr1wuL9M7uw",
+          "type": "washing",
+          "description": "Lavagem",
+          "quantity": 1,
+          "unit_price": 50,
+          "total": 50
+        },
+        {
+          "id": "5a812ce6-1bdd-4b15-88f4-3ddba179c233",
+          "service_order_id": "Fr1wuL9M7uw",
+          "type": "parking",
+          "description": "Taxa de estacionamento",
+          "quantity": 0.1,
+          "unit_price": 15,
+          "total": 1.5
+        }
+      ]
+    }
+  ],
+  "invoices": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}
